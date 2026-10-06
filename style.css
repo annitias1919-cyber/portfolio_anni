@@ -612,185 +612,114 @@ a {
     transition: width 1.3s ease;
 }
 
-/* ================= PROJECT ================= */
+/* ================= MOBILE PROJECT ================= */
 
-.projects {
-    background: white;
-}
+@media (max-width: 650px) {
 
-.project-container {
-    max-width: 1100px;
-    margin: auto;
+    .project-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
-}
+    /* ================= PROJECT CARD ================= */
 
+    .project-card {
+        width: 100%;
+        border-radius: 12px;
+        overflow: hidden;
+    }
 
-/* ================= PROJECT CARD ================= */
 
-.project-card {
-    overflow: hidden;
+    /* ================= PROJECT IMAGE ================= */
 
-    background: white;
+    .project-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
 
-    border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-    border-radius: 12px;
+        background: #f3f4f6;
 
-    transition: 0.3s ease;
-}
+        overflow: hidden;
+    }
 
-.project-card:hover {
-    transform: translateY(-5px);
+    .project-image img {
+        width: 100%;
+        height: 100%;
 
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-}
+        display: block;
 
+        object-fit: contain;
 
-/* ================= PROJECT IMAGE ================= */
+        background: #f3f4f6;
+    }
 
-.project-image {
-    display: block;
 
-    width: 100%;
-    height: 220px;
+    /* ================= PROJECT CONTENT ================= */
 
-    overflow: hidden;
+    .project-content {
+        padding: 20px;
+    }
 
-    background: #f3f4f6;
 
-    border-bottom: 1px solid var(--border);
+    .project-category {
+        margin-bottom: 8px;
 
-    position: relative;
-}
+        font-size: 9px;
 
-.project-image img {
-    width: 100%;
-    height: 100%;
+        letter-spacing: 1.2px;
+    }
 
-    display: block;
 
-    object-fit: cover;
+    .project-content h3 {
+        margin: 0 0 10px;
 
-    opacity: 1;
+        font-size: 21px;
 
-    filter: none;
+        line-height: 1.35;
+    }
 
-    transition: transform 0.4s ease;
-}
 
-.project-image:hover img {
-    transform: scale(1.04);
-}
+    .project-content p {
+        margin: 0;
 
+        font-size: 13px;
 
-/* Menghilangkan overlay gelap pada gambar */
+        line-height: 1.75;
+    }
 
-.project-image::before,
-.project-image::after {
-    display: none !important;
-}
 
+    /* ================= PROJECT TECHNOLOGY ================= */
 
-/* ================= PROJECT CONTENT ================= */
+    .project-tech {
+        gap: 7px;
 
-.project-content {
-    padding: 24px;
-}
+        margin: 16px 0 18px;
+    }
 
-.project-category {
-    display: inline-block;
 
-    margin-bottom: 9px;
+    .project-tech span {
+        padding: 6px 10px;
 
-    color: var(--primary);
+        font-size: 10px;
 
-    font-size: 10px;
+        border-radius: 5px;
+    }
 
-    font-weight: 600;
 
-    letter-spacing: 1px;
-}
+    /* ================= PROJECT LINK ================= */
 
-.project-content h3 {
-    margin: 0 0 12px;
+    .project-link {
+        font-size: 13px;
 
-    color: #222;
+        gap: 6px;
+    }
 
-    font-size: 20px;
-
-    line-height: 1.4;
-}
-
-.project-content p {
-    margin: 0;
-
-    color: var(--gray);
-
-    font-size: 13px;
-
-    line-height: 1.8;
-}
-
-
-/* ================= PROJECT TECHNOLOGY ================= */
-
-.project-tech {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 7px;
-
-    margin: 18px 0 20px;
-}
-
-.project-tech span {
-    padding: 6px 10px;
-
-    color: #555;
-
-    background: #f1f3f5;
-
-    border: 1px solid #e5e7eb;
-
-    border-radius: 5px;
-
-    font-size: 10px;
-}
-
-
-/* ================= PROJECT LINK ================= */
-
-.project-link {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    color: var(--primary);
-
-    font-size: 12px;
-
-    font-weight: 600;
-
-    transition: 0.3s ease;
-}
-
-.project-link:hover {
-    color: var(--primary-dark);
-}
-
-.project-link i {
-    transition: 0.3s ease;
-}
-
-.project-link:hover i {
-    transform: translateX(4px);
 }
 
 
