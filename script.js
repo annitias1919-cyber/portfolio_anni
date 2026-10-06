@@ -383,14 +383,6 @@ const contactForm =
         "contactForm"
     );
 
-
-contactForm.addEventListener(
-    "submit",
-    function (event) {
-
-        event.preventDefault();
-
-
         const name =
             document.getElementById(
                 "name"
