@@ -1051,71 +1051,70 @@
 
         <!-- CONTACT FORM -->
 
-        <form class="contact-form"
-              id="contactForm">
+     <form action="https://formsubmit.co/annitias1919@gmail.com"
+      method="POST"
+      class="contact-form"
+      id="contactForm">
 
+    <!-- Judul email -->
+    <input type="hidden"
+           name="_subject"
+           value="Pesan Baru dari Portfolio Anni Tias Lestari">
 
-            <div class="input-group">
+    <!-- Tampilan email -->
+    <input type="hidden"
+           name="_template"
+           value="table">
 
-                <input type="text"
-                       id="name"
-                       placeholder="Nama lengkap"
-                       required>
+    <!-- Setelah berhasil dikirim -->
+    <input type="hidden"
+           name="_next"
+           value="https://portfolioanni.vercel.app/#contact">
 
-            </div>
+    <!-- Anti spam -->
+    <input type="text"
+           name="_honey"
+           style="display:none">
 
-
-
-            <div class="input-group">
-
-                <input type="email"
-                       id="email"
-                       placeholder="Email"
-                       required>
-
-            </div>
-
-
-
-            <div class="input-group">
-
-                <input type="text"
-                       id="subject"
-                       placeholder="Subject"
-                       required>
-
-            </div>
-
-
-
-            <div class="input-group">
-
-                <textarea id="message"
-                          rows="6"
-                          placeholder="Tulis pesan..."
-                          required></textarea>
-
-            </div>
-
-
-
-            <button type="submit"
-                    class="btn primary-btn">
-
-                Kirim Pesan
-
-                <i class="fa-solid fa-paper-plane"></i>
-
-            </button>
-
-
-        </form>
-
-
+    <!-- Nama -->
+    <div class="input-group">
+        <input type="text"
+               name="name"
+               placeholder="Nama lengkap"
+               required>
     </div>
 
+    <!-- Email -->
+    <div class="input-group">
+        <input type="email"
+               name="email"
+               placeholder="Email"
+               required>
+    </div>
 
-</section>
+    <!-- Subject -->
+    <div class="input-group">
+        <input type="text"
+               name="subject"
+               placeholder="Subject"
+               required>
+    </div>
+
+    <!-- Pesan -->
+    <div class="input-group">
+        <textarea name="message"
+                  rows="6"
+                  placeholder="Tulis pesan..."
+                  required></textarea>
+    </div>
+
+    <!-- Tombol -->
+    <button type="submit" class="btn primary-btn">
+        Kirim Pesan
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+</form>
 
 
 
